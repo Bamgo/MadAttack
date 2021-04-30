@@ -1,7 +1,6 @@
 # MadAttack
 
 
-*
 
 ## UPDATE
 
