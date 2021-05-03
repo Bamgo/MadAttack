@@ -5,6 +5,7 @@ public class Game {
 	Man m = new Man();  // 주인공
 
 	void START(){ // 게임 시작
+		System.out.println("");
 		System.out.println("\"살아남아라, 광공 !!\"");
 		System.out.println("");
 		System.out.println("");
@@ -21,10 +22,12 @@ public class Game {
 	}
 
 	void exit(){  // 종료
+		System.out.println("");
 		System.out.println("게임을 종료하였습니다.");
 	}
 
 	void name(){  // 이름 입력
+		System.out.println("");
 		System.out.println("이름을 입력해주세요.");
 		m.name = s.nextLine();
 		System.out.println( m.name +" 이 이름으로 좋습니까? ㅇㅇ / ㄴㄴ");
@@ -40,6 +43,7 @@ public class Game {
 	}
 	
 	void home() {  // 맨 처음 시작 자리이자 일어났을 때 첫 행동
+		System.out.println("");
 		System.out.println("1.침대   2.방   3.나간다  4.상태");
 		System.out.println("");
 		String sc = s.nextLine();
@@ -65,6 +69,7 @@ public class Game {
 	}
 
 	void outside(){  // 하루 일과 (아침에 일어나서 나오면 시작)
+		System.out.println("");
 		System.out.println("1.일   2.운동   3.자유행동");
 		System.out.println("");
 		String sc = s.nextLine();

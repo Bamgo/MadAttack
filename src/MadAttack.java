@@ -53,28 +53,34 @@ class Man{
 	int money = 1000000;
 	
 	void bed() {  // 잠
+		System.out.println("");
 		System.out.println("얼마나 자겠습니까?");
 		System.out.println("1.1시간   2.2시간   3.4시간   4.6시간   5.10시간");
 		String sc = s.nextLine();
 		System.out.println("");
 		
 		if(sc.equals("1")) {
+			System.out.println("");
 			System.out.println("1시간 동안 취침하였습니다.");
 			time += 60;
 			System.out.println("");
 		}else if(sc.equals("2")) {
+			System.out.println("");
 			System.out.println("2시간 동안 취침하였습니다.");
 			time += 120;
 			System.out.println("");
 		}else if(sc.equals("3")) {
+			System.out.println("");
 			System.out.println("4시간 동안 취침하였습니다.");
 			time += 240;
 			System.out.println("");
 		}else if(sc.equals("4")) {
+			System.out.println("");
 			System.out.println("6시간 동안 취침하였습니다.");
 			time += 360;
 			System.out.println("");
 		}else if(sc.equals("5")) {
+			System.out.println("");
 			System.out.println("광공은 늦잠 자지 않습니다 !!");
 			System.out.println("");
 			System.out.println("- 광공력이 떨어졌습니다.");
@@ -84,10 +90,18 @@ class Man{
 			System.out.println("+ 다크써클이 생겨 퇴폐미가 올랐습니다.");
 			System.out.println("");
 			time += 600;
-			
 		}
 		
+		time();
+	}
+
+	void Free_action(){  // 자유행동
+
+	}
+	
+	void time() {  // 시간 흐름
 		if(time > 1440){  // 만약 1440분이 지나면 하루 지나감
+			System.out.println("");
 			System.out.println("하루가 지났습니다.");
 			day++;
 			System.out.println("오늘은 "+day+"일입니다.");
@@ -95,11 +109,6 @@ class Man{
 			System.out.println("");
 		}
 	}
-
-	void Free_action(){  // 자유행동
-
-	}
-	
 	
 	void ending(){  // 엔딩 분기
 
