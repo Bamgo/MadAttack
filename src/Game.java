@@ -57,20 +57,42 @@ public class Game {
 		}else if(sc.equals("4")){
 			info();	
 		}
+		
+		home();
 	}
 	
 	void bed() {  // 침대. 자서 시간을 가게 함
 		m.bed();
-		home();
 	}
 	
 	void room() {  // 방. 거울, 옷장, 선반 등
+		System.out.println("");
+		System.out.println("흑백의 단조로운 색상의 넓은 방입니다. 혼자 살기엔 넓지만 광공은 혼자 삽니다.");
+		System.out.println("어디를 확인할까요?");
+		System.out.println("");
+		System.out.println("1.거울   2.옷장   3.서랍  4.돌아간다");
+		System.out.println("");
+		String sc = s.nextLine();
 		
+		if(sc.equals("1")){  
+			m.mirror();
+		}else if(sc.equals("2")){
+			m.closet();
+		}else if(sc.equals("3")){
+			m.drawer();
+		}else if(sc.equals("4")) {
+			home();
+		}
+		
+		room();
 	}
 
 	void outside(){  // 하루 일과 (아침에 일어나서 나오면 시작)
 		System.out.println("");
-		System.out.println("1.일   2.운동   3.자유행동");
+		System.out.println("길거리에는 바쁘게 걸어가는 사람들이 가득합니다. 그러나 광공은 서두르지 않습니다. 길거리에서 시간을 지체하지도 않습니다.");
+		System.out.println("무엇을 하러 갈까요?");
+		System.out.println("");
+		System.out.println("1.일   2.운동   3.자유행동  4.집");
 		System.out.println("");
 		String sc = s.nextLine();
 
@@ -80,25 +102,27 @@ public class Game {
 			exercise();
 		}else if(sc.equals("3")){
 			Free_action();
+		}else if(sc.equals("4")){
+			home();
 		}
+		
+		outside();
 	}
 
 	void work() {
-			
+		m.work();
 	}
 		
 		
 	void exercise() {
-			
+		m.exercise();
 	}
 		
 	void Free_action(){
 		m.Free_action();
-		outside();
 	}
 	
 	void info(){
 		m.info();	
-		home();
 	}
 }
