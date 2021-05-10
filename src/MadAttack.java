@@ -171,11 +171,58 @@ class Man{
 	}
 	
 	void closet() {  // 복장 변경 가능(업데이트 예정)
+		System.out.println("");
+		System.out.println("검은색의 커다란 스타일러가 한 쪽 벽면을 차지하고 있습니다.");
+		System.out.println("");
+		System.out.println("1.옷 갈아입기(업데이트 예정)   2.돌아간다");
+		System.out.println("");
+		String sc = s.nextLine();
 		
+		if(sc.equals("1")) {
+			
+		} else if(sc.equals("2")) {
+			
+		}
 	}
 	
 	void drawer() {  // 공략하는 데 필수품 담겨있음
+		System.out.println("");
+		System.out.println("먼지 한 톨 묻어있지 않은 작은 서랍장이 하나 있습니다.");
+		System.out.println("");
+		System.out.println("1.첫 번째 칸    2.두 번째 칸    3.세 번째 칸    4.네 번째 칸    5.돌아간다");
+		System.out.println("");
+		String sc = s.nextLine();
 		
+		if(sc.equals("1")) {
+			System.out.println("");
+			System.out.println("고오급 외제차의 차키가 있습니다. 가져갈까?");
+			System.out.println("");
+			System.out.println("1.가져간다    2.돌아간다");
+			String c = s.nextLine();
+			if(c.equals("1")) {
+				System.out.println("");
+				System.out.println("차 키를 손에 넣었습니다!");
+				System.out.println("");
+			}if(c.equals("2")) {
+				drawer();
+			}
+		} else if(sc.equals("2")) {
+			System.out.println("");
+			System.out.println("아무것도 들어있지 않습니다.");
+			System.out.println("");
+		} else if(sc.equals("3")) {
+			System.out.println("");
+			System.out.println("아무것도 들어있지 않습니다.");
+			System.out.println("");
+		} else if(sc.equals("4")) {
+			System.out.println("");
+			System.out.println("아무것도 들어있지 않습니다.");
+			System.out.println("");
+		} else if(sc.equals("5")) {
+			System.out.println("");
+			System.out.println("아무것도 들어있지 않습니다.");
+			System.out.println("");
+		}
 	}
 	
 	void work() {
