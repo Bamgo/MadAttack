@@ -225,8 +225,66 @@ class Man{
 		}
 	}
 	
-	void work() {
+	void work() {  // 머기업에서 일
+		System.out.println("");
+		System.out.println("차를 타고 조금 이동하자, 광공이 이사로 근무하고 있는 대기업 건물이 보인다.");
+		System.out.println("");
+		System.out.println("1.일한다   2.돌아간다");
+		System.out.println("");
+		String sc = s.nextLine();
 		
+		if(sc.equals("1")) {  // 일 결과 랜덤
+			Random random = new Random(); 
+			Boolean [] logging = new Boolean[4];
+			 for(int i=0; i<logging.length; i++) {
+			        logging[i] = random.nextBoolean();
+
+			        if(logging[i]) {
+			            System.out.println("나무 장작 패는 중......");              
+			        } else {
+			        	System.out.println("헛 도끼질 하는 중.....");
+			        }
+
+
+					if(logging[0]){
+
+						System.out.println("공주님이 도망갔습니다.");
+
+						money -= 1000;
+
+						strength += 1;
+
+					}else if(logging[1]){
+
+						System.out.println("평범하게 일했습니다.");
+
+						money += 2200;
+
+						strength += 3;
+
+					}else if(logging[2]){
+
+						System.out.println("할당량 이상에 효율적인 도끼질을 했습니다.");
+
+						money += 3800;
+
+						strength += 5;
+
+					}else if(logging[3]){
+
+						System.out.println("도끼가 부러졌습니다.");
+
+						money += 660;
+
+						strength += 2;
+
+					}
+
+				}
+
+		} else if(sc.equals("2")) {
+			
+		}
 	}
 	
 	void exercise() {
